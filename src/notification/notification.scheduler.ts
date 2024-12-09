@@ -5,7 +5,6 @@
 - Une tâche planifiée qui envoie un email à J-3 à 12h00 avant la date de retour de chaque location.
 */
 
-
 import { Injectable } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { NotificationService } from './notification.service';

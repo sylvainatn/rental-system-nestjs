@@ -45,6 +45,37 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Accéder aux utilisateurs via l'API
+
+Pour accéder aux données des utilisateurs, utilisez les endpoints suivants :
+
+### URL de base
+
+### Endpoint pour les clients
+
+- **GET** `/customers` : Récupère la liste de tous les clients.
+- **POST** `/customers` : Ajoute un nouveau client.
+
+### Exemple de requêtes
+
+#### Récupérer tous les clients
+
+```http
+GET http://localhost:3000/customers
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "store_id": 1,
+  "address_id": 123
+}
+
+```
+
 ## Run tests
 
 ```bash
