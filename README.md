@@ -127,6 +127,17 @@ Content-Type: application/json
 }
 ```
 
+## Lister les toutes les tâches planifiées
+
+### Endpoint pour lister les tâches
+
+- **GET** `/notification/tasks` : Liste toutes les tâches planifiées
+
+#### Lister toutes les tâches planifiées
+```http
+GET http://localhost:3000/notification/tasks
+```
+
 ## Run tests
 
 ```bash
