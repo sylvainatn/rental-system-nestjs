@@ -49,8 +49,6 @@ $ npm run start:prod
 
 Pour accéder aux données des utilisateurs, utilisez les endpoints suivants :
 
-### URL de base
-
 ### Endpoint pour les clients
 
 - **GET** `/customers` : Récupère la liste de tous les clients.
@@ -87,6 +85,30 @@ Content-Type: application/json
   "email": "jane.smith@example.com",
   "store_id": 2,
   "address_id": 456
+}
+```
+
+## Effectuer une location
+
+L'API permet de gérer la location d'éléments à travers le endpoint suivant :
+
+### Endpoint pour les locations
+
+- **POST** `/rental` : Crée une nouvelle location.
+
+### Exemple de requête
+
+#### Créer une location
+
+```http
+POST http://localhost:3000/rental
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "filmId": 42,
+  "rentalDate": "2024-12-09 10:00:00",
+  "returnDate": "2024-12-16 10:00:00",
 }
 ```
 
