@@ -47,8 +47,6 @@ $ npm run start:prod
 
 ## Accéder aux utilisateurs via l'API
 
-Pour accéder aux données des utilisateurs, utilisez les endpoints suivants :
-
 ### Endpoint pour les clients
 
 - **GET** `/customers` : Récupère la liste de tous les clients.
@@ -89,8 +87,6 @@ Content-Type: application/json
 ```
 
 ## Effectuer une location
-
-L'API permet de gérer la location d'éléments à travers le endpoint suivant :
 
 ### Endpoint pour les locations
 
