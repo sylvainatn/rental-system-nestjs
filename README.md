@@ -108,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-## Envoyer un rappel par e-mail à chaque client
+## Envoyer un rappel par e-mail manuellement à chaque client
 
 ### Endpoint pour les notifications
 
