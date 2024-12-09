@@ -108,6 +108,25 @@ Content-Type: application/json
 }
 ```
 
+## Envoyer un rappel par e-mail à chaque client
+
+### Endpoint pour les notifications
+
+- **POST** `/notification/send` : Envoie des notifications par e-mail pour les retours prévus dans un certain nombre de jours.
+
+### Exemple de requête
+
+#### Envoyer un rappel à J-3
+
+```http
+POST http://localhost:3000/notification/send
+Content-Type: application/json
+
+{
+  "daysBeforeReturn": 3 
+}
+```
+
 ## Run tests
 
 ```bash
