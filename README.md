@@ -55,14 +55,16 @@ Pour accéder aux données des utilisateurs, utilisez les endpoints suivants :
 
 - **GET** `/customers` : Récupère la liste de tous les clients.
 - **POST** `/customers` : Ajoute un nouveau client.
+- **PUT** `/customers/:id` : Modifie un client existant.  
 
 ### Exemple de requêtes
 
 #### Récupérer tous les clients
-
 ```http
 GET http://localhost:3000/customers
-
+```
+#### Ajouter un client
+```http
 POST http://localhost:3000/customers
 Content-Type: application/json
 
@@ -73,7 +75,19 @@ Content-Type: application/json
   "store_id": 1,
   "address_id": 123
 }
+```
+#### Modifier un client avec l'id
+```http
+PUT http://localhost:3000/customers/1
+Content-Type: application/json
 
+{
+  "first_name": "Jane",
+  "last_name": "Smith",
+  "email": "jane.smith@example.com",
+  "store_id": 2,
+  "address_id": 456
+}
 ```
 
 ## Run tests
