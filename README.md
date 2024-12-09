@@ -127,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-## Lister les toutes les tâches planifiées
+## Lister toutes les tâches planifiées
 
 ### Endpoint pour lister les tâches
 
