@@ -1,4 +1,3 @@
-// src/notification/notification.service.ts
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { MailService } from '../mail/mail.service';
@@ -46,7 +45,7 @@ export class NotificationService {
             const message = `Cher(e) ${customer.first_name},\n\n` +
                `           Votre location du film "${film.title}" arrive à échéance le ${return_date.toDateString()}.\n` +
                `           Merci de retourner le film à temps pour éviter toute pénalité.\n\n` +
-               `           Cordialement\n` +
+               `           Cordialement,\n` +
                `           Votre équipe de location.`;
 
             await this.mailService.sendMail(customer.email, subject, message);
